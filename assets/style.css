@@ -1,8 +1,28 @@
 * {
     font-family: Outfit;
+    background-color: #1A132E;
 }
 
 
-.day_bar {
+.day-bar {
+    display: flex;
+    justify-content: center;
     background-color: #7557AD;
+    
+}
+
+button {
+color: #B3A9D8;
+background: #4A387A;
+}
+
+i {
+    color:#7557AD;
+    
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
