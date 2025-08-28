@@ -5,24 +5,52 @@
 
 
 .day-bar {
+    /* box-sizing: border-box; */
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap:6px;
     background-color: #7557AD;
+    border: 1px solid white;
+    width: 400px;
+    height: 33px;
+    border-radius: 3px;
     
 }
-
 button {
+    border: none;
+        background-color: #7557AD;
+
+}
+.day {
+
+flex: 1 1 0;
 color: #B3A9D8;
+
+/* this colour should be applied if it is that day */
 background: #4A387A;
+gap :6px;
+
+font-size: 15px;
+font-weight: 600;
+
 }
 
 i {
-    color:#7557AD;
+    color: #B3A9D8;
+
+    background-color: #7557AD;
     
 }
 
 .header-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.mon {
+    width: 64px;
 }

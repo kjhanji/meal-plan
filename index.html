@@ -13,22 +13,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
+
+<!-- matches the content to the device view -->
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 </head>
   <body>
       <header class="header-bar">
 
-        <i class="fa-solid fa-bars"></i>
-
-        <div class= "day-bar ">
-
-          <button class = "mon">Monday</button>
-          <button class = "tues">Tueday</button>
-          <button class = "wed">Wednesday</button>
-          <button class = "thurs">Monday</button>
-          <button class = "fri">Friday</button>
-        </div>
-        <i class="fa-solid fa-square-plus"></i>
+       <button aria-label="Menu"><i class="fa-solid fa-bars"></i>
+       </button>
+       <button aria-label="Add Food"><i class="fa-solid fa-square-plus"></i>
+      </button>
       </header>
+      <div class= "day-bar ">
+
+        <button class = "day mon">Monday</button>
+        <button class = "day tues">Tuesday</button>
+        <button class = "day wed">Wednesday</button>
+        <button class = "day thurs">Thursday</button>
+        <button class = "day fri">Friday</button>
+      </div>
       
   </body>
 </html>
