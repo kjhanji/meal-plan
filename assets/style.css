@@ -63,22 +63,15 @@ i {
 
 }
 
-
-.add-container{ 
-    display: flex;
+.modal-container {
+    background-color: white;
+    display:flex;
+    gap:10px;
     opacity: 0;
     pointer-events: none;
-    border: 1px solid white;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* moves back by half its width/height */
-
 }
 
-
-.add-container.show {
+.modal-container.show {
     opacity: 1;
-    pointer-events: all;
+    pointer-events: auto;
 }
