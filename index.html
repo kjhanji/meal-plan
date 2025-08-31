@@ -20,20 +20,34 @@
 </head>
   <body>
       <header class="header-bar">
+        <div class="top-buttons">
 
-       <button aria-label="Menu"><i class="fa-solid fa-bars"></i>
-       </button>
-       <button aria-label="Add Food"><i class="fa-solid fa-square-plus"></i>
-      </button>
+          <button aria-label="Menu"><i class="fa-solid fa-bars"></i>
+          </button>
+          <button aria-label="Add Food" id="add-button"><i class="fa-solid fa-square-plus"></i>
+          </button>
+        </div>
+        <div class= "day-bar ">
+          <button class = "day mon">Monday</button>
+          <button class = "day tues">Tuesday</button>
+          <button class = "day wed">Wednesday</button>
+          <button class = "day thurs">Thursday</button>
+          <button class = "day fri">Friday</button>
+        </div>
       </header>
-      <div class= "day-bar ">
-
-        <button class = "day mon">Monday</button>
-        <button class = "day tues">Tuesday</button>
-        <button class = "day wed">Wednesday</button>
-        <button class = "day thurs">Thursday</button>
-        <button class = "day fri">Friday</button>
-      </div>
       
+
+      <div class="add-container" >
+        <div class="modal-add">
+
+          <input type="text" class="add" placeholder="Add your food here!">
+        </div>
+
+        <button class="add-close"> <i class="fa-solid fa-circle-xmark"></i></button>
+
+
+      </div>
   </body>
 </html>
+
+

@@ -11,15 +11,16 @@
     justify-content: space-around;
     gap:6px;
     background-color: #7557AD;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 400px;
     height: 33px;
     border-radius: 3px;
     
 }
 button {
-    border: none;
-        background-color: #7557AD;
+    /* border: none; */
+    background-color: #7557AD;
+    border-radius: 3px;
 
 }
 .day {
@@ -45,12 +46,39 @@ i {
 
 .header-bar {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
-    margin-bottom: 10px;
 }
 
-.mon {
-    width: 64px;
+.top-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid white;
+
+
+
+}
+
+
+.add-container{ 
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* moves back by half its width/height */
+
+}
+
+
+.add-container.show {
+    opacity: 1;
+    pointer-events: all;
 }
