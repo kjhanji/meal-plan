@@ -64,11 +64,19 @@ i {
 }
 
 .modal-container {
-    background-color: white;
     display:flex;
     gap:10px;
     opacity: 0;
     pointer-events: none;
+    
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* moves back by half its width/height */
+  background-color: #7557AD;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 .modal-container.show {
