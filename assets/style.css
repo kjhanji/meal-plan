@@ -57,29 +57,53 @@ i {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid white;
-
-
+    /* border: 1px solid white; */
 
 }
 
+ .add { /* input text is white */
+    color: white; 
+    border: none;
+    outline: none;
+
+}
 .modal-container {
+
     display:flex;
     gap:10px;
     opacity: 0;
     pointer-events: none;
     
-      position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* moves back by half its width/height */
-  background-color: #7557AD;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* moves back by half its width/height */
+    background-color: #7557AD;
+    padding: 20px;
+    border-radius: 10px;
+    size: 800px;
+    width: 300px;
+    
+}
+
+/* items in the modal  */
+.inner-modal {
+    display: flex; 
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content:  center;
+    width: 300px;
+    padding: 5px 0;
 }
 
 .modal-container.show {
     opacity: 1;
     pointer-events: auto;
+    size: 300px; 
+}
+
+/* window for the addition */
+.modal { 
+    /* border: 1px solid white; */
+
 }
