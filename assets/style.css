@@ -102,8 +102,59 @@ i {
     size: 300px; 
 }
 
-/* window for the addition */
-.modal { 
-    /* border: 1px solid white; */
 
+
+/* add container */
+.add-container {
+  position: relative;
+  margin: 20px;
 }
+
+/* add field */
+.add-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #B3A9D8;
+  outline: none;
+  background-color: transparent;
+  color: #B3A9D8;
+}
+
+/* add label */
+.add-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Input highlight */
+.add-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #654fa3;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.add-field:focus + .add-label {
+  top: -20px;
+  font-size: 12px;
+  color: #654fa3;
+}
+
+.add-field:focus + .add-label + .add-highlight {
+  width: 100%;
+  
+}
+
